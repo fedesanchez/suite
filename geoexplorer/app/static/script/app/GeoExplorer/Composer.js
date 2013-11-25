@@ -58,6 +58,22 @@ GeoExplorer.Composer = Ext.extend(GeoExplorer, {
         config.tools = [
             {
                 ptype: "gxp_layermanager",
+                groups : {
+"default":"Capas del Usuario",
+//"muestra":"Precarga / Muestra",
+"regulacion":"Regulación Urbana y Dominial",
+"planfamilia":"Plan Familia Propietaria",
+"titulacion":"Titulación de Inmuebles",
+"habitacional":"Programas Habitacionales",
+"infraestructura":"Infraestructura Urbana y Territorial",
+"urbanismo":"Urbanismo",
+"reconquista":{"title":"Proyecto Reconquista",expanded:false},
+"lineamientos":{"title":"Proyecto Lineamientos",expanded:false},
+"otros":{"title":"Otras fuentes",expande:false},
+"idera":{"title":"Servicios IDERA",expande:false},
+"ideba":{"title":"Servicios IDEBA",expande:false},
+"background":{"title":"Capas Base",exclusive: true}
+},
                 outputConfig: {
                     id: "layers",
                     tbar: [],
@@ -405,7 +421,12 @@ GeoExplorer.Composer = Ext.extend(GeoExplorer, {
      * Create the various parts that compose the layout.
      */
     initPortal: function() {
-        
+        var logo=new Ext.Panel({
+            id:"logo-header",
+            region:"north",
+            cls:"logo-header",
+            height:60
+        });
         var westPanel = new gxp.CrumbPanel({
             id: "tree",
             region: "west",
@@ -535,7 +556,7 @@ GeoExplorer.Composer = Ext.extend(GeoExplorer, {
             activeItem: 0
         });
         
-        this.portalItems = [{
+        this.portalItems = [logo,{
             region: "center",
             layout: "border",
             tbar: toolbar,

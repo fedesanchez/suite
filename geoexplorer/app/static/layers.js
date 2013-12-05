@@ -49,7 +49,7 @@ var layers=    [{
                     group: 'titulacion'
                 },{
                     source:'local',
-                    name:'sstuyv:conflictos_habitacionales_22185',
+                    name:'sstuyv:conflictos_habitacionales',
                     group: 'habitacional'
                 },{
                     source:'local',
@@ -81,7 +81,7 @@ var layers=    [{
                 // lineamientos
                 {
                     source:'local',
-                    name:'sstuyv:alumnos_establecimientos_2007',
+                    name:'sstuyv:alumnos_establecimiento_2007',
                     group:'lineamientos',
                     visibility:false
                 },{

@@ -57,7 +57,7 @@ var layers=    [{
                     group: 'habitacional'
                 },{
                     source:'local',
-                    name:'sstuyv:Informe Urbanístico DPIUT',
+                    name:'sstuyv:informe_urbanistico_dpiut',
                     group: 'urbanismo'
                 },
 
@@ -106,8 +106,8 @@ var layers=    [{
                     visibility:false
                 },{
                     source:'local',
-                    name:'habitantes_cama_2010',
-                    group:'sstuyv:lineamientos',
+                    name:'sstuyv:habitantes_cama_2010',
+                    group:'lineamientos',
                     visibility:false
                 },{
                     source:'local',
